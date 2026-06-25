@@ -1,62 +1,58 @@
-# QA Automation Assignment
+# Cypress QA Automation Framework
 
-## Prerequisites
+## Project Overview
 
-* Node.js installed
-* Git installed
+This project demonstrates end-to-end test automation using Cypress and JavaScript.
 
-## Project Setup
+The framework covers:
 
-Install dependencies:
+- Login functionality
+- Sidebar navigation
+- Transaction validation
+- Favourite fruit management
+- Settings persistence
+- Logout functionality
 
-```bash
-npm install
-```
+## Tech Stack
 
-## Run Tests in Cypress UI
-
-```bash
-npx cypress open
-```
-
-## Run Tests in Headless Mode
-
-```bash
-npx cypress run
-```
+- Cypress
+- JavaScript
+- Git
+- GitHub
 
 ## Test Coverage
 
 ### Login
-
-* Validate successful login
-* Validate invalid credentials
-* Validate empty credentials error
-
-### Sidebar Navigation
-
-* Verify sidebar is hidden before login
-* Verify sidebar is visible after login
+- Valid login
+- Invalid login
+- Empty credentials
 
 ### Transactions
-
-* Verify transactions table is displayed
-* Verify page indicator changes when navigating pages
-* Verify transaction data changes across pages
+- Table validation
+- Pagination validation
+- Data verification
 
 ### Favourite Fruit
-
-* Move fruit to favourite container
-* Verify source and destination containers update
+- Move fruit to favourites
+- Verify container updates
 
 ### Settings
-
-* Verify logo toggle functionality
-* Verify logo preference persists after refresh
-* Verify logo visibility across application pages
+- Logo preference persistence
+- Refresh validation
+- Cross-page validation
 
 ### Logout
+- Session cleanup
+- Redirect validation
 
-* Verify session is cleared after logout
-* Verify user is redirected to login page
-* Verify protected navigation is no longer visible
+## Installation
+
+npm install
+
+## Run Tests
+
+npx cypress open
+
+## Run Headless
+
+npx cypress run
